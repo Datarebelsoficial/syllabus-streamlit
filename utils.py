@@ -149,15 +149,17 @@ def generar_datos_generales(nombre_del_curso, nivel, publico, student_persona, s
     [DESCRIPCION_TERCER_OBJETIVO_SECUNDARIO]
     ...
 
-    El outline debe incluir exactamente {num_clases} clases. 
-    Organízalas en semanas lógicas (por ejemplo, 4 por semana si es 12 en total). 
+    El outline debe incluir exactamente {num_clases} clases.  
     Debe estar en formato de tabla Markdown con estas columnas:
 
 
     | Clase | Título | Conceptos Clave | Objetivo 1 | Objetivo 2 | Objetivo 3 | Descripción |
+    
     Cada fila debe contener texto breve y específico (no listas ni viñetas).  
     Los objetivos deben redactarse con verbos de acción (por ejemplo: "Aplicar", "Analizar", "Desarrollar", "Interpretar", etc.).  
-    Evita escribir "X" o dejar columnas vacías.  
+    Aegurate de escribir los 3 objetivos
+    Evita escribir "X" o dejar columnas vacías. 
+    No generes más ni menos clases que las indicadas.   
     Asegúrate de que cada clase tenga al menos un objetivo redactado en una oración corta y clara.
     """
     respuesta = call_gemini(prompt)
@@ -221,7 +223,7 @@ def generar_syllabus_completo(nombre_del_curso, nivel, objetivos_mejorados, publ
 
     generalidades = pedir_seccion("GENERALIDADES_DEL_PROGRAMA", "Redacta un párrafo breve que combine descripción general del curso, su objetivo y el perfil de egreso.")
     ingreso = pedir_seccion("PERFIL_INGRESO", "Redacta un párrafo claro y directo del perfil de ingreso del estudiante.")
-    detalles = pedir_seccion("DETALLES_PLAN_ESTUDIOS", "Escribe la lista de 12 clases, cada una con título y una breve descripción, NO usar negritas en markdown.")
+    detalles = pedir_seccion("DETALLES_PLAN_ESTUDIOS", "Escribe la lista de la clases seleccionadas, cada una con título y una breve descripción, NO usar negritas en markdown.")
 
     template_copy = drive_service.files().copy(
         fileId=TEMPLATE_ID,

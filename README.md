@@ -20,7 +20,7 @@
 ## 🚀 Descripción general
 
 Esta aplicación en **Streamlit** permite generar automáticamente **syllabus**, **outlines** y **documentos de clases** a partir de la descripción de un curso.  
-Utiliza **Gemini gemini-2.0-flash** para crear el contenido y se conecta con la API de **Google Docs** y **Google Sheets** para producir archivos listos para editar y compartir.
+Utiliza **Gemini gemini-2.0-flash-lite** para crear el contenido y se conecta con la API de **Google Docs** y **Google Sheets** para producir archivos listos para editar y compartir.
 
 ---
 
