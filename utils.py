@@ -155,6 +155,10 @@ def generar_datos_generales(nombre_del_curso, nivel, publico, student_persona, s
 
 
     | Clase | Título | Conceptos Clave | Objetivo 1 | Objetivo 2 | Objetivo 3 | Descripción |
+    Cada fila debe contener texto breve y específico (no listas ni viñetas).  
+    Los objetivos deben redactarse con verbos de acción (por ejemplo: "Aplicar", "Analizar", "Desarrollar", "Interpretar", etc.).  
+    Evita escribir "X" o dejar columnas vacías.  
+    Asegúrate de que cada clase tenga al menos un objetivo redactado en una oración corta y clara.
     """
     respuesta = call_gemini(prompt)
 
