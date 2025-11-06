@@ -195,7 +195,7 @@ def replace_placeholder(document_id, placeholder, new_text):
 # =========================
 # 📄 GENERACIÓN DE SYLLABUS Y OUTLINE
 # =========================
-TEMPLATE_ID = "1I2jMQ1IjmG6_22dC7u6LYQfQzlND4WIvEusd756LFuo"
+TEMPLATE_ID = "1hMXfSZKB3FwEq_hHuJtlXyXBLoO-OJVxKKej0QAuEU0"
 
 def generar_syllabus_completo(nombre_del_curso, nivel, objetivos_mejorados, publico, siguiente,
                                perfil_ingreso, perfil_egreso, outline,
