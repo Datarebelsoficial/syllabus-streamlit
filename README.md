@@ -27,7 +27,7 @@ Utiliza **Gemini gemini-2.0-flash-lite** para crear el contenido y se conecta co
 ## 🖥️ Demo (versión en Streamlit Cloud)
 
 > 💡 Puedes probar la app en línea:  
-> 👉 [https://syllabus-dr.streamlit.app](https://syllabus-dr.streamlit.app)
+> 👉 [https://generador-syllabus-dr.streamlit.app](https://generador-syllabus-dr.streamlit.app)
 
 ---
 
